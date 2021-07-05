@@ -1,0 +1,9 @@
+{
+  "areaManagerName": "",
+  "createTime": "",
+  "endTime": "",
+  "@JsonKey(name:'id') int": "id",
+  "organizationBranchName": "",
+  "startTime": "",
+  "title": ""
+}

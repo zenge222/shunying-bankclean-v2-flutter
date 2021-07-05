@@ -1,0 +1,11 @@
+{
+  "cleanerName": "",
+  "organizationBranchName": "",
+  "createTime": "",
+  "firstTime": "",
+  "secondTime": "",
+  "@JsonKey(name:'firstStatus') int": "firstStatus",
+  "firstStatusText": "",
+  "@JsonKey(name:'secondStatus') int": "secondStatus",
+  "secondStatusText": ""
+}

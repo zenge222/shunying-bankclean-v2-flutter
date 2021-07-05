@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.backClean.flutter">
+    <!-- Flutter needs it to communicate with the running application
+         to allow setting breakpoints, to provide hot reload, etc.
+    -->
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="393349faec0d97dbb44c6c5cb9f8de63"></meta-data>
+    </application>
+</manifest>

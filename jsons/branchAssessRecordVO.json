@@ -1,0 +1,13 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "title": "",
+  "@JsonKey(name:'month') int": "month",
+  "@JsonKey(name:'year') int": "year",
+  "organizationBranchName": "",
+  "@JsonKey(name:'organizationBranchId') int": "organizationBranchId",
+  "@JsonKey(name:'bankUserId') int": "bankUserId",
+  "subTitle": "",
+  "@JsonKey(name:'aveScore') double": "aveScore",
+  "createTime": "",
+  "itemVOList":"$[]branchAssessRecordItemVO"
+}

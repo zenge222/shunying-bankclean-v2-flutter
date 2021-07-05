@@ -1,0 +1,7 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "title": "",
+  "subTitle": "",
+  "@JsonKey(name:'score') double": "score",
+  "subTitleList": "$[]itemVO"
+}

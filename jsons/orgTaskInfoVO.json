@@ -1,0 +1,7 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "date": "",
+  "select": false,
+  "@JsonKey(name:'status') int": "status",
+  "taskList": "$[]taskVO"
+}

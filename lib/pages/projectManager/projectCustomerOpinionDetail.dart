@@ -1,0 +1,259 @@
+import 'dart:io';
+
+import 'package:bank_clean_flutter/http/Api.dart';
+import 'package:bank_clean_flutter/models/adviceFeedbackVO.dart';
+import 'package:bank_clean_flutter/models/emergencyVO.dart';
+import 'package:bank_clean_flutter/pages/ComPageWidget.dart';
+import 'package:bank_clean_flutter/pages/PhotoViewGalleryScreen.dart';
+import 'package:bank_clean_flutter/pages/loadingPage.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_color_plugin/flutter_color_plugin.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:permission_handler/permission_handler.dart';
+
+class ProjectCustomerOpinionDetail extends StatefulWidget {
+  final int id;
+
+  const ProjectCustomerOpinionDetail({Key key, this.id}) : super(key: key);
+
+  @override
+  _ProjectCustomerOpinionDetailState createState() =>
+      _ProjectCustomerOpinionDetailState();
+}
+
+/// 项目经理
+class _ProjectCustomerOpinionDetailState
+    extends State<ProjectCustomerOpinionDetail> with ComPageWidget {
+  bool isLoading = false;
+  List feedbackImages = [];
+  AdviceFeedbackVO resData;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: ColorUtil.color('#F5F6F9'),
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: ColorUtil.color('#333333')),
+        title: Text(
+          '客户意见',
+          style: TextStyle(color: ColorUtil.color('#333333')),
+        ),
+        centerTitle: true,
+        brightness: Brightness.light,
+        // 设置状态栏字体颜色 一般有Brightness.dark,和Brightness.light两种模式
+        elevation: 0,
+        //默认是4， 设置成0 就是没有阴影了
+        backgroundColor: Colors.white,
+      ),
+      body: LoadingPage(
+        isLoading: false,
+        child: Column(
+          children: <Widget>[
+            resData != null
+                ? Expanded(
+                    child: SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.all(
+                                Radius.circular(ScreenUtil().setWidth(8))),
+                          ),
+                          margin: EdgeInsets.fromLTRB(
+                              ScreenUtil().setWidth(32),
+                              ScreenUtil().setHeight(24),
+                              ScreenUtil().setWidth(32),
+                              ScreenUtil().setHeight(24)),
+                          padding: EdgeInsets.fromLTRB(
+                              ScreenUtil().setWidth(32),
+                              ScreenUtil().setHeight(40),
+                              ScreenUtil().setWidth(32),
+                              ScreenUtil().setHeight(40)),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Padding(
+                                padding: EdgeInsets.only(
+                                    bottom: ScreenUtil().setHeight(20)),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: <Widget>[
+                                    Text('${resData.title}',
+                                        style: TextStyle(
+                                            color: ColorUtil.color('#333333'),
+                                            fontSize: ScreenUtil().setSp(36),
+                                            fontWeight: FontWeight.bold)),
+                                    Text('${resData.createTime}',
+                                        style: TextStyle(
+                                          color: ColorUtil.color('#666666'),
+                                          fontSize: ScreenUtil().setSp(32),
+                                        ))
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                margin: EdgeInsets.only(
+                                    top: ScreenUtil().setHeight(20)),
+                                child: RichText(
+                                    text: TextSpan(children: [
+                                  TextSpan(
+                                      text: '${resData.subTitle}',
+                                      style: TextStyle(
+                                        color: ColorUtil.color('#666666'),
+                                        fontSize: ScreenUtil().setSp(32),
+                                      )),
+                                ])),
+                              ),
+                              Container(
+                                margin: EdgeInsets.only(
+                                    top: ScreenUtil().setHeight(20)),
+                                child: RichText(
+                                    text: TextSpan(children: [
+                                  TextSpan(
+                                      text: '${resData.bankUserPhone}',
+                                      style: TextStyle(
+                                        color: ColorUtil.color('#666666'),
+                                        fontSize: ScreenUtil().setSp(32),
+                                      )),
+                                ])),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.all(
+                                Radius.circular(ScreenUtil().setWidth(8))),
+                          ),
+                          margin: EdgeInsets.fromLTRB(
+                              ScreenUtil().setWidth(32),
+                              ScreenUtil().setHeight(0),
+                              ScreenUtil().setWidth(32),
+                              ScreenUtil().setHeight(24)),
+                          padding: EdgeInsets.fromLTRB(
+                              ScreenUtil().setWidth(32),
+                              ScreenUtil().setHeight(40),
+                              ScreenUtil().setWidth(32),
+                              ScreenUtil().setHeight(40)),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('问题和意见',
+                                  style: TextStyle(
+                                      color: ColorUtil.color('#333333'),
+                                      fontSize: ScreenUtil().setSp(36),
+                                      fontWeight: FontWeight.bold)),
+                              Padding(
+                                padding: EdgeInsets.fromLTRB(
+                                    ScreenUtil().setWidth(0),
+                                    ScreenUtil().setHeight(32),
+                                    ScreenUtil().setWidth(0),
+                                    ScreenUtil().setHeight(32)),
+                                child: Text(
+                                    '${resData.content}',
+                                    style: TextStyle(
+                                      color: ColorUtil.color('#666666'),
+                                      fontSize: ScreenUtil().setSp(32),
+                                    )),
+                              ),
+                              Container(
+                                child: Wrap(
+                                  children: _imgList(),
+                                ),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ))
+                : Text(''),
+          ],
+        ),
+      ),
+    );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    /// 首次进入请求数据
+    setState(() {
+      isLoading = true;
+    });
+    _getData();
+  }
+
+  Future _getData() async {
+    Map params = new Map();
+    params['id'] = widget.id;
+    Api.getAdviceFeedbackDetail(map: params).then((res) {
+      if (res.code == 1) {
+        print(res.data.images);
+        List image = [];
+        if (res.data.images != '') {
+          res.data.images.split(',').forEach((val) {
+            image.add(res.data.baseUrl + val);
+          });
+        }
+        setState(() {
+          isLoading = false;
+          resData = res.data;
+          feedbackImages = image;
+        });
+      } else {
+        showToast(res.msg);
+      }
+    });
+  }
+
+  List<Widget> _imgList() {
+    List<Widget> images = [];
+    if (feedbackImages.length == 0) return images;
+    for (int i = 0; i < feedbackImages.length; i++) {
+      images.add(
+        GestureDetector(
+          onTap: () {
+            //FadeRoute是自定义的切换过度动画（渐隐渐现） 如果不需要 可以使用默认的MaterialPageRoute
+            /* Navigator.of(context).push(new MaterialPageRoute(page: PhotoViewGalleryScreen(
+              images: newImgArr,//传入图片list
+              index: i,//传入当前点击的图片的index
+              heroTag: 'simple',//传入当前点击的图片的hero tag （可选）
+            )));*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => PhotoViewGalleryScreen(
+                    images: feedbackImages, index: i, heroTag: 'simple'),
+              ),
+            );
+          },
+          child: Container(
+            margin: EdgeInsets.fromLTRB(
+                ScreenUtil().setWidth(10),
+                ScreenUtil().setHeight(30),
+                ScreenUtil().setWidth(10),
+                ScreenUtil().setHeight(10)),
+            child: ClipRRect(
+              child: Image.network(
+                feedbackImages[i],
+                width: ScreenUtil().setWidth(187),
+                height: ScreenUtil().setHeight(187),
+                fit: BoxFit.cover,
+              ),
+              borderRadius: BorderRadius.circular(4),
+            ),
+          ),
+        ),
+      );
+    }
+    return images;
+  }
+}

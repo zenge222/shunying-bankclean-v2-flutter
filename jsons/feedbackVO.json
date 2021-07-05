@@ -1,0 +1,21 @@
+{
+  "areaManagerName": "",
+  "cleanerName": "",
+  "content": "",
+  "createTime": "",
+  "dispatchTime": "",
+  "@JsonKey(name:'id') int": "id",
+  "@JsonKey(name:'areaLeaderTimeout') int": "areaLeaderTimeout",
+  "areaLeaderTimeoutText": "",
+  "@JsonKey(name:'cleanerTimeout') int": "cleanerTimeout",
+  "cleanerTimeoutText": "",
+  "images": "",
+  "organizationBranchName": "",
+  "@JsonKey(name:'status') int": "status",
+  "statusText": "",
+  "resultImages": "",
+  "@JsonKey(name:'timeout') int": "timeout",
+  "timeoutText": "",
+  "title": "",
+  "baseUrl": ""
+}

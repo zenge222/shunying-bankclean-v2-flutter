@@ -1,0 +1,14 @@
+{
+  "orgBranchName": "",
+  "address": "",
+  "@JsonKey(name:'aveScore') double": "aveScore",
+  "subTitle": "",
+  "@JsonKey(name:'orgCheckRecordCount') int": "orgCheckRecordCount",
+  "@JsonKey(name:'feedbackCount') int": "feedbackCount",
+  "@JsonKey(name:'finishTaskCount') int": "finishTaskCount",
+  "@JsonKey(name:'unFinishTaskCount') int": "unFinishTaskCount",
+  "@JsonKey(name:'onTime') int": "onTime",
+  "@JsonKey(name:'outTime') int": "outTime",
+  "userList":"$[]userVO",
+  "taskItemVOList":"$[]taskItemVO"
+}

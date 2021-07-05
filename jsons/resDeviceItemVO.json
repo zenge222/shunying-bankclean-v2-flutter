@@ -1,0 +1,23 @@
+{
+  "baseUrl": "",
+  "businessContactPhone": "",
+  "businessName": "",
+  "buyDate": "",
+  "checkCycle": "",
+  "createTime": "",
+  "@JsonKey(name:'deleteFlag') int": "deleteFlag",
+  "dutyPerson": "",
+  "dutyPersonId": "",
+  "id": "",
+  "img": "",
+  "name": "",
+  "no": "",
+  "organizationBranchId": "",
+  "organizationBranchName": "",
+  "projectId": "",
+  "projectName": "",
+  "qualityDate": "",
+  "sku": "",
+  "@JsonKey(name:'status') int": "status",
+  "@JsonKey(name:'type') int": "type"
+}

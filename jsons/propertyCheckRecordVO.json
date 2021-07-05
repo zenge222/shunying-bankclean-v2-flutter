@@ -1,0 +1,13 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "createTime": "",
+  "itemVOList": "$[]propertyCheckRecordItemVO",
+  "@JsonKey(name:'managerId') int": "managerId",
+  "managerName": "",
+  "@JsonKey(name:'organizationBranchId') int": "organizationBranchId",
+  "organizationBranchName": "",
+  "@JsonKey(name:'projectId') int": "projectId",
+  "projectName": "",
+  "@JsonKey(name:'status') int": "status",
+  "statusText": ""
+}

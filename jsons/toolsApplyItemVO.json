@@ -1,0 +1,15 @@
+{
+  "@JsonKey(name:'checked') int": "checked",
+  "@JsonKey(name:'id') int": "id",
+  "@JsonKey(name:'passQuantity') int": "passQuantity",
+  "@JsonKey(name:'quantity') int": "quantity",
+  "@JsonKey(name:'remaining') int": "remaining",
+  "@JsonKey(name:'sumCost') double": "sumCost",
+  "@JsonKey(name:'sumLimitQuantity') int": "sumLimitQuantity",
+  "@JsonKey(name:'sumPassQuantity') int": "sumPassQuantity",
+  "@JsonKey(name:'toolsId') int": "toolsId",
+  "toolsImage": "",
+  "baseUrl": "",
+  "@JsonKey(name:'toolsLimitQuantity') int": "toolsLimitQuantity",
+  "toolsName": ""
+}

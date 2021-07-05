@@ -1,0 +1,16 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "name": "",
+  "organizationBranchName": "",
+  "phone": "",
+  "profile": "",
+  "select": false,
+  "token": "",
+  "@JsonKey(name:'type') int": "type",
+  "aveScore": "",
+  "workEndTime": "",
+  "workStartTime": "",
+  "idCardNo": "",
+  "taskName": "",
+  "@JsonKey(name:'taskId') int": "taskId"
+}

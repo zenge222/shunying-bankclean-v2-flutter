@@ -1,0 +1,4 @@
+{
+  "@JsonKey(name:'orgBranchUnAllocationCount') int": "orgBranchUnAllocationCount",
+  "@JsonKey(name:'toolsUnCheckCount') int": "toolsUnCheckCount"
+}

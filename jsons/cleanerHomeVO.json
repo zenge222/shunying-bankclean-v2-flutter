@@ -1,0 +1,19 @@
+{
+  "orgBranchName": "",
+  "orgImage": "",
+  "baseUrl": "",
+  "@JsonKey(name:'feedbackCount') int": "feedbackCount",
+  "@JsonKey(name:'todayHaveWork') int": "todayHaveWork",
+  "@JsonKey(name:'tomorrowWork') int": "tomorrowWork",
+  "@JsonKey(name:'longitude') double": "longitude",
+  "@JsonKey(name:'latitude') double": "latitude",
+  "todayTitle": "",
+  "todayAddress": "",
+  "todayStartWorkTime": "",
+  "todayEndWorkTime": "",
+  "tomorrowTitle": "",
+  "tomorrowAddress": "",
+  "tomorrowStartWorkTime": "",
+  "tomorrowEndWorkTime": "",
+  "taskItemVOList": "$[]taskItemVO"
+}

@@ -1,0 +1,5 @@
+{
+  "@JsonKey(name:'needCount') int": "needCount",
+  "@JsonKey(name:'repairedCount') int": "repairedCount",
+  "@JsonKey(name:'todayCount') int": "todayCount"
+}

@@ -1,0 +1,16 @@
+{
+  "profile": "",
+  "baseUrl": "",
+  "name": "",
+  "phone": "",
+  "@JsonKey(name:'orgBranchCount') int": "orgBranchCount",
+  "@JsonKey(name:'orgCheckCount') int": "orgCheckCount",
+  "@JsonKey(name:'aveScore') double": "aveScore",
+  "@JsonKey(name:'feedbackCount') int": "feedbackCount",
+  "@JsonKey(name:'satisfyingCount') int": "satisfyingCount",
+  "@JsonKey(name:'general') int": "general",
+  "@JsonKey(name:'unSatisfying') int": "unSatisfying",
+  "@JsonKey(name:'onTime') int": "onTime",
+  "@JsonKey(name:'outTime') int": "outTime",
+  "branchAssessRecordVOList":"$[]branchAssessRecordVO"
+}

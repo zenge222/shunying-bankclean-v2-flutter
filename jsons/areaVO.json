@@ -1,0 +1,8 @@
+{
+  "areaManagerName": "",
+  "@JsonKey(name:'id') int": "id",
+  "name": "",
+  "@JsonKey(name:'orgBranchCount') int": "orgBranchCount",
+  "@JsonKey(name:'status') int": "status",
+  "statusText": ""
+}

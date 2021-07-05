@@ -1,0 +1,9 @@
+{
+  "@JsonKey(name:'quantity') int": "quantity",
+  "toolsName": "",
+  "@JsonKey(name:'toolsId') int": "toolsId",
+  "toolsImage": "",
+  "@JsonKey(name:'checked') int": "checked",
+  "@JsonKey(name:'passQuantity') int": "passQuantity",
+  "@JsonKey(name:'toolsLimitQuantity') int": "toolsLimitQuantity"
+}

@@ -1,0 +1,20 @@
+{
+  "areaManagerName": "",
+  "cleanerName": "",
+  "createTime": "",
+  "endDate": "",
+  "@JsonKey(name:'endTime') int": "endTime",
+  "endTimeText": "",
+  "@JsonKey(name:'id') int": "id",
+  "insteadCleanerName": "",
+  "organizationBranchName": "",
+  "reason": "",
+  "startDate": "",
+  "@JsonKey(name:'startTime') int": "startTime",
+  "startTimeText": "",
+  "@JsonKey(name:'status') int": "status",
+  "statusText": "",
+  "title": "",
+  "@JsonKey(name:'type') int": "type",
+  "typeText": ""
+}

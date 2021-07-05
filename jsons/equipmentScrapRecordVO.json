@@ -1,0 +1,21 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "baseUrl": "",
+  "checkName": "",
+  "content": "",
+  "createTime": "",
+  "@JsonKey(name:'equipmentId') int": "equipmentId",
+  "equipmentImg": "",
+  "equipmentName": "",
+  "equipmentNo": "",
+  "@JsonKey(name:'equipmentType') int": "equipmentType",
+  "img": "",
+  "@JsonKey(name:'organizationBranchId') int": "organizationBranchId",
+  "organizationBranchName": "",
+  "@JsonKey(name:'projectId') int": "projectId",
+  "projectName": "",
+  "@JsonKey(name:'repairEmployeeId') int": "repairEmployeeId",
+  "repairEmployeeName": "",
+  "@JsonKey(name:'status') int": "status",
+  "title": ""
+}

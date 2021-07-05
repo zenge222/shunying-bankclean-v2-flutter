@@ -1,0 +1,22 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "@JsonKey(name:'createId') int": "createId",
+  "createName": "",
+  "createTime": "",
+  "updateId": "",
+  "updateName": "",
+  "updateTime": "",
+  "name": "",
+  "image": "",
+  "@JsonKey(name:'status') int": "status",
+  "@JsonKey(name:'type') int": "type",
+  "@JsonKey(name:'projectUserId') int": "projectUserId",
+  "projectUserName": "",
+  "bankUserName": "",
+  "@JsonKey(name:'bankUserId') int": "bankUserId",
+  "startDate": "",
+  "endDate": "",
+  "orgName": "",
+  "@JsonKey(name:'deleteFlag') int": "deleteFlag",
+  "select": false
+}

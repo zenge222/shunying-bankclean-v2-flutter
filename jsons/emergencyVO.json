@@ -1,0 +1,15 @@
+{
+  "cleanerName": "",
+  "content": "",
+  "createTime": "",
+  "@JsonKey(name:'id') int": "id",
+  "@JsonKey(name:'status') int": "status",
+  "images": "",
+  "statusText": "",
+  "createTime": "",
+  "baseUrl": "",
+  "organizationBranchName": "",
+  "resultContent": "",
+  "resultImages": "",
+  "title": ""
+}

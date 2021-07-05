@@ -1,0 +1,17 @@
+{
+  "address": "",
+  "areaManagerName": "",
+  "areaManagerPhone": "",
+  "@JsonKey(name:'checkCount') int": "checkCount",
+  "@JsonKey(name:'during') int": "during",
+  "@JsonKey(name:'allocation') int": "allocation",
+  "@JsonKey(name:'areaManagerId') int": "areaManagerId",
+  "@JsonKey(name:'id') int": "id",
+  "latestCheckTime": "",
+  "name": "",
+  "baseUrl": "",
+  "image": "",
+  "organizationName": "",
+  "projectName": "",
+  "select": false
+}

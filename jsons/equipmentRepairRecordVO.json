@@ -1,0 +1,8 @@
+{
+  "@JsonKey(name:'equipmentId') int": "equipmentId",
+  "repairEmployeeName": "",
+  "content": "",
+  "img": "",
+  "createTime": "",
+  "open": false
+}

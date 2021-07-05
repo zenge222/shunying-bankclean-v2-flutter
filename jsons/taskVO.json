@@ -1,0 +1,18 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "@JsonKey(name:'cleanerId') int": "cleanerId",
+  "@JsonKey(name:'organizationBranchId') int": "organizationBranchId",
+  "title": "",
+  "cleanerName": "",
+  "cleanerPhone": "",
+  "baseUrl": "",
+  "organizationBranchName": "",
+  "select": false,
+  "startTime": "",
+  "createTime": "",
+  "areaManagerName": "",
+  "workDate": "",
+  "endTime": "",
+  "cleanerProfile": "",
+  "taskItemVOList":"$[]taskItemVO"
+}

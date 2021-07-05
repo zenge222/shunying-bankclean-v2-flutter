@@ -1,0 +1,13 @@
+{
+  "content": "",
+  "startTime": "",
+  "endTime": "",
+  "cleanerName": "",
+  "images": "",
+  "baseUrl": "",
+  "open": false,
+  "@JsonKey(name:'status') int": "status",
+  "@JsonKey(name:'id') int": "id",
+  "statusText": "",
+  "title": ""
+}

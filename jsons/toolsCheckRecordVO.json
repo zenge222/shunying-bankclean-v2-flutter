@@ -1,0 +1,11 @@
+{
+  "areaManagerName": "",
+  "createTime": "",
+  "@JsonKey(name:'id') int": "id",
+  "@JsonKey(name:'status') int": "status",
+  "@JsonKey(name:'sumCost') double": "sumCost",
+  "statusText": "",
+  "title": "",
+  "reason": "",
+  "itemList": "$[]toolsApplyItemVO"
+}

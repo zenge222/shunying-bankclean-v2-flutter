@@ -1,0 +1,12 @@
+{
+  "cleanerName": "",
+  "createTime": "",
+  "mark": "",
+  "organizationBranchName": "",
+  "reason": "",
+  "@JsonKey(name:'id') int": "id",
+  "@JsonKey(name:'status') int": "status",
+  "statusText": "",
+  "title": "",
+  "materialApplyItemVOList": "$[]MaterialApplyItem"
+}

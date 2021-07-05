@@ -1,0 +1,11 @@
+{
+  "image": "",
+  "orgBranchName": "",
+  "baseUrl": "",
+  "@JsonKey(name:'taskItemRecordCount') int": "taskItemRecordCount",
+  "@JsonKey(name:'orgBranchId') int": "orgBranchId",
+  "@JsonKey(name:'allTaskItemRecordCount') int": "allTaskItemRecordCount",
+  "@JsonKey(name:'feedbackCount') int": "feedbackCount",
+  "@JsonKey(name:'allFeedbackCount') int": "allFeedbackCount",
+  "taskItemVOList": "$[]taskItemVO"
+}

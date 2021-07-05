@@ -1,0 +1,13 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "title": "",
+  "organizationBranchName": "",
+  "@JsonKey(name:'organizationBranId') int": "organizationBranId",
+  "startTime": "",
+  "endTime": "",
+  "@JsonKey(name:'duration') double": "duration",
+  "workDate": "",
+  "createTime": "",
+  "@JsonKey(name:'status') int": "status",
+  "statusText": ""
+}

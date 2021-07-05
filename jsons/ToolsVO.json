@@ -1,0 +1,9 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "@JsonKey(name:'cost') double": "cost",
+  "@JsonKey(name:'limitQuantity') int": "limitQuantity",
+  "name": "",
+  "image": "",
+  "baseUrl": "",
+  "@JsonKey(name:'quantity') int": "quantity"
+}

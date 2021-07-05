@@ -1,0 +1,13 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "createId": "",
+  "createName": "",
+  "createTime": "",
+  "updateId": "",
+  "updateName": "",
+  "updateTime": "",
+  "@JsonKey(name:'configId') int": "configId",
+  "title": "",
+  "@JsonKey(name:'maxScore') double": "maxScore",
+  "@JsonKey(name:'score') double": "score"
+}

@@ -1,0 +1,11 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "checkEmployeeName": "",
+  "content": "",
+  "createTime": "",
+  "@JsonKey(name:'organizationBranchId') int": "organizationBranchId",
+  "organizationBranchName": "",
+  "@JsonKey(name:'projectId') int": "projectId",
+  "projectName": "",
+  "title": ""
+}

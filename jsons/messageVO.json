@@ -1,0 +1,18 @@
+{
+  "areaManagerName": "",
+  "cleanerName": "",
+  "content": "",
+  "createTime": "",
+  "images": "",
+  "organizationBranchName": "",
+  "@JsonKey(name:'readStatus') int": "readStatus",
+  "@JsonKey(name:'auditStatus') int": "auditStatus",
+  "@JsonKey(name:'id') int": "id",
+  "readStatusText": "",
+  "subTitle": "",
+  "baseUrl": "",
+  "title": "",
+  "@JsonKey(name:'type') int": "type",
+  "@JsonKey(name:'days') int": "days",
+  "typeText": ""
+}

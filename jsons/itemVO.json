@@ -1,0 +1,5 @@
+{
+  "@JsonKey(name:'key') int": "key",
+  "value": "",
+  "select": false
+}

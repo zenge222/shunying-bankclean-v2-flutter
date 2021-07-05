@@ -1,0 +1,14 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "title": "",
+  "subTitle": "",
+  "content": "",
+  "images": "",
+  "baseUrl": "",
+  "@JsonKey(name:'bankUserId') int": "bankUserId",
+  "bankUserName": "",
+  "bankUserPhone": "",
+  "@JsonKey(name:'readStatus') int": "readStatus",
+  "readStatusText": "",
+  "createTime": ""
+}

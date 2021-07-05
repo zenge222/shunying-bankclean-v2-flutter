@@ -1,0 +1,13 @@
+{
+  "orgBranchName": "",
+  "orgBranchImage": "",
+  "@JsonKey(name:'overBudget') int": "overBudget",
+  "overBudgetText": "",
+  "@JsonKey(name:'status') int": "status",
+  "statusText": "",
+  "applyCleanerNames": "",
+  "@JsonKey(name:'sumQuantity') int": "sumQuantity",
+  "@JsonKey(name:'orgBranchId') int": "orgBranchId",
+  "applyVOList": "$[]toolsApplyVO",
+  "itemVOList": "$[]toolsApplyItemVO"
+}

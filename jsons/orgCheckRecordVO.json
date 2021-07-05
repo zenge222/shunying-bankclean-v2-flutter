@@ -1,0 +1,18 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "areaManagerName": "",
+  "organizationBranchName": "",
+  "bankChatContent": "",
+  "cleanerChatContent": "",
+  "@JsonKey(name:'aveScore') double ": "aveScore",
+  "orgImage": "",
+  "@JsonKey(name:'interval') int": "interval",
+  "@JsonKey(name:'checkCount') int": "checkCount",
+  "@JsonKey(name:'timeout') int": "timeout",
+  "nearDate": "",
+  "showTimeout":false,
+  "createTime": "",
+  "baseUrl": "",
+  "recordList": "$[]orgCheckRecordVO",
+  "recordItemVOList": "$[]orgCheckRecordItemVO"
+}

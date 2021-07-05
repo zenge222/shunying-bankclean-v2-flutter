@@ -1,0 +1,5 @@
+{
+  "@JsonKey(name:'id') int": "id",
+  "@JsonKey(name:'checkScore') int": "checkScore",
+  "title": ""
+}

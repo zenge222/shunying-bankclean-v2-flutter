@@ -1,0 +1,11 @@
+{
+  "@JsonKey(name:'equipmentId') int": "equipmentId",
+  "equipmentBuyDate": "",
+  "equipmentDutyPerson": "",
+  "equipmentName": "",
+  "equipmentNo": "",
+  "equipmentSku": "",
+  "@JsonKey(name:'equipmentType') int": "equipmentType",
+  "@JsonKey(name:'id') int": "id",
+  "@JsonKey(name:'status') int": "status"
+}
